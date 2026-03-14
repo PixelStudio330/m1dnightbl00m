@@ -11,7 +11,7 @@ const MotionLink = motion(Link);
 export default function Header() {
   const navItems = [
     { name: 'Home', href: '/' },
-    { name: 'Works', href: '/works' },
+    { name: 'Works', href: '/work' },
     { name: 'Story', href: '/story' },
   ];
 

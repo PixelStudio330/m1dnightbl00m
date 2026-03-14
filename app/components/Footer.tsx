@@ -15,10 +15,10 @@ export default function Footer() {
   const currentYear = new Date().getFullYear();
 
   const socials = [
-    { icon: <Instagram size={20} />, href: "https://instagram.com/m1dnightbloom", label: "Instagram" },
+    { icon: <Instagram size={20} />, href: "https://www.instagram.com/n._.zaman?igsh=b3k2dzhmbnZ6Nmd3&utm_source=qr", label: "Instagram" },
     { icon: <Github size={20} />, href: "https://github.com/PixelStudio330", label: "GitHub" },
-    { icon: <Linkedin size={20} />, href: "#", label: "LinkedIn" },
-    { icon: <Facebook size={20} />, href: "#", label: "Facebook" },
+    { icon: <Linkedin size={20} />, href: "www.linkedin.com/in/mst-gulnahar", label: "LinkedIn" },
+    { icon: <Facebook size={20} />, href: "https://www.facebook.com/share/179JsC2cPu/", label: "Facebook" },
     { icon: <Mail size={20} />, href: "mailto:gulnaharnima@gmail.com", label: "Email" },
   ];
 

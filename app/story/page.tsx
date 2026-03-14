@@ -6,6 +6,7 @@ import {
   BookOpen, Palette, Code2, Sparkles, Heart, Wind, Coffee, Gamepad2, CloudSun 
 } from "lucide-react";
 import Image from "next/image";
+import Link from "next/link";
 
 const FadeInText = ({ children, delay = 0 }: { children: React.ReactNode, delay?: number }) => (
   <motion.span
@@ -215,13 +216,27 @@ export default function StoryPage() {
           <h2 className="text-5xl md:text-7xl font-serif font-black text-white mb-10 relative z-10 leading-tight">
             Ready to plant something <br /> beautiful together?
           </h2>
-          <motion.button 
-            whileHover={{ scale: 1.1, rotate: [0, -2, 2, 0] }}
-            whileTap={{ scale: 0.9 }}
-            className="bg-[#5FA14C] text-white px-14 py-6 rounded-full font-black text-xl shadow-2xl relative z-10"
-          >
-            Start a Project
-          </motion.button>
+        <Link href="/connect"> 
+  <motion.button 
+    whileHover={{ 
+      scale: 1.1, 
+      rotate: [0, -2, 2, 0],
+      transition: { duration: 0.3 } 
+    }}
+    whileTap={{ scale: 0.9 }}
+    className="bg-[#5FA14C] text-white px-14 py-6 rounded-full font-black text-xl shadow-2xl shadow-[#5FA14C]/30 relative z-10 cursor-pointer overflow-hidden group"
+  >
+    {/* Optional: Add a subtle shine effect on hover */}
+    <span className="relative z-10">Start a Project</span>
+    
+    <motion.div 
+      initial={{ x: '-100%' }}
+      whileHover={{ x: '100%' }}
+      transition={{ duration: 0.6 }}
+      className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent pointer-events-none"
+    />
+  </motion.button>
+</Link>
         </motion.div>
       </section>
     </main>

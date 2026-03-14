@@ -75,8 +75,10 @@ export default function ConnectPage() {
     setIsSubmitting(true);
 
     try {
-      // Convert all selected images to base64
-      const attachments = await Promise.all(selectedFiles.map(file => fileToBase64(file)));
+      // Convert selected images to base64 (if any exist)
+      const attachments = selectedFiles.length > 0 
+        ? await Promise.all(selectedFiles.map(file => fileToBase64(file)))
+        : [];
 
       const response = await fetch("/api/send", {
         method: "POST",
@@ -104,10 +106,10 @@ export default function ConnectPage() {
   };
 
   const socials = [
-    { name: "Instagram", icon: <Instagram />, href: "#", color: "#E1306C" },
-    { name: "LinkedIn", icon: <Linkedin />, href: "#", color: "#0077B5" },
-    { name: "GitHub", icon: <Github />, href: "#", color: "#333" },
-    { name: "Facebook", icon: <Facebook />, href: "#", color: "#1877F2" },
+    { name: "Instagram", icon: <Instagram />, href: "https://www.instagram.com/n._.zaman?igsh=b3k2dzhmbnZ6Nmd3&utm_source=qr", color: "#E1306C" },
+    { name: "LinkedIn", icon: <Linkedin />, href: "www.linkedin.com/in/mst-gulnahar", color: "#0077B5" },
+    { name: "GitHub", icon: <Github />, href: "https://github.com/PixelStudio330", color: "#333" },
+    { name: "Facebook", icon: <Facebook />, href: "https://www.facebook.com/share/179JsC2cPu/", color: "#1877F2" },
   ];
 
   const inputBaseStyles = "w-full bg-[#FDFBF4] border-2 border-[#C7A9D9]/20 px-6 py-4 focus:border-[#8A6DAF] outline-none transition-all font-medium text-[#8A6DAF] placeholder:text-[#E67E22]/50";
@@ -176,10 +178,10 @@ export default function ConnectPage() {
                   <p className="text-[10px] text-[#8A6DAF] font-bold italic ml-2">* Figma design is highly preferred for pixel-perfect results.</p>
                 </div>
 
-                {/* ATTACHMENT SECTION */}
+                {/* ATTACHMENT SECTION (Optional) */}
                 <div className="space-y-3">
                   <label className="text-xs font-black uppercase tracking-widest text-[#5FA14C] ml-2 flex items-center gap-2">
-                    <Paperclip size={14} /> Attach Requirements/References *
+                    <Paperclip size={14} /> Attach Requirements/References (Optional)
                   </label>
                   
                   <div 
@@ -190,7 +192,6 @@ export default function ConnectPage() {
                     <span className="text-sm font-bold text-[#5FA14C]">Click to upload photos</span>
                     <span className="text-[10px] text-[#8A6DAF] uppercase tracking-wider">Works on Phone & PC</span>
                     <input 
-                      required={selectedFiles.length === 0}
                       type="file" 
                       ref={fileInputRef}
                       onChange={handleFileChange}
