@@ -73,7 +73,7 @@ export default function Footer() {
         {/* Copyright & Info */}
         <div className="text-center space-y-2">
           <p className="font-serif font-black text-[#8A6DAF] text-lg">
-            Made with <span className="text-[#E67E22]">♥</span> by Lyra NovaX
+            Made with <span className="text-[#E67E22]">♥</span> by Nahar
           </p>
           <p className="text-xs font-bold uppercase tracking-[0.2em] text-[#5FA14C]/60">
             © {currentYear} M1DNIGHTBL00M • Digital Garden
