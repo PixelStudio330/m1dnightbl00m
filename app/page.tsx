@@ -125,7 +125,7 @@ export default function HomePage() {
             
             {/* CTA Button */}
             <motion.div variants={{ hidden: { opacity: 0, y: 20 }, visible: { opacity: 1, y: 0 } }}>
-              <Link href="/Work">
+              <Link href="/work">
                 <motion.button 
                   onMouseMove={handleMouseMove}
                   onMouseLeave={resetMouse}
