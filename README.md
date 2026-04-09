@@ -20,16 +20,16 @@
   <p><i>Visual highlights of the m1dnightbl00m experience</i></p>
   <table style="border: none; border-collapse: collapse;">
     <tr>
-      <td colspan="2"><img src="/m1dnightbl00m/public/shot1.png" alt="Hero Section" width="100%" style="border-radius: 10px; margin-bottom: 5px;" /></td>
+      <td colspan="2"><img src="shot1.png" alt="Hero Section" width="100%" style="border-radius: 10px; margin-bottom: 5px;" /></td>
     </tr>
     <tr>
-      <td><img src="/m1dnightbl00m/public/shot2.png" alt="Project Grid" width="100%" style="border-radius: 10px;" /></td>
+      <td><img src="shot2.png" alt="Project Grid" width="100%" style="border-radius: 10px;" /></td>
       <td><img src="shot3.png" alt="Interactive UI" width="100%" style="border-radius: 10px;" /></td>
     </tr>
     <tr>
-      <td><img src="/m1dnightbl00m/public/shot3.png" alt="Mobile View" width="100%" style="border-radius: 10px;" /></td>
-      <td><img src="/m1dnightbl00m/public/shot4.png" alt="Creative Details" width="100%" style="border-radius: 10px;" /></td>
-      <td><img src="/m1dnightbl00m/public/shot5.png" alt="Creative Details" width="100%" style="border-radius: 10px;" /></td>
+      <td><img src="shot3.png" alt="Mobile View" width="100%" style="border-radius: 10px;" /></td>
+      <td><img src="shot4.png" alt="Creative Details" width="100%" style="border-radius: 10px;" /></td>
+      <td><img src="shot5.png" alt="Creative Details" width="100%" style="border-radius: 10px;" /></td>
     </tr>
   </table>
 </div>
