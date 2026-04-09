@@ -8,16 +8,12 @@
   <a href="https://m1dnightbl00m.vercel.app/" target="_blank">
     <img src="https://img.shields.io/badge/EXPLORE_LIVE_SITE-2D5A27?style=for-the-badge&logo=vercel&logoColor=white" height="35" />
   </a>
-
-  <p style="margin-top: 15px;">
-    <img src="https://img.shields.io/badge/Next.js-14-black?style=flat-square&logo=nextdotjs" />
-    <img src="https://img.shields.io/badge/TypeScript-Ready-blue?style=flat-square&logo=typescript" />
-    <img src="https://img.shields.io/badge/Framer_Motion-Interactive-FF00C1?style=flat-square&logo=framer" />
-    <img src="https://img.shields.io/badge/Tailwind-Styling-38B2AC?style=flat-square&logo=tailwind-css" />
-  </p>
 </div>
 
 ---
+
+> [!IMPORTANT]
+> **Copyright Notice:** This project is a proprietary design and technical showcase by **Gulnahar**. The source code for this portfolio is **not** open-source. For inquiries regarding custom portfolio builds, please contact Pixel Studio below.
 
 ### 📸 Project Gallery
 <div align="center">
@@ -39,56 +35,60 @@
 
 ---
 
+### 🛠️ The Professional Stack
+Built for speed, reliability, and smooth interaction.
+
+<div align="center">
+  <img src="https://img.shields.io/badge/Next.js-14-black?style=for-the-badge&logo=nextdotjs" />
+  <img src="https://img.shields.io/badge/TypeScript-Ready-blue?style=for-the-badge&logo=typescript" />
+  <img src="https://img.shields.io/badge/Framer_Motion-Interactive-FF00C1?style=for-the-badge&logo=framer" />
+  <img src="https://img.shields.io/badge/Tailwind-Styling-38B2AC?style=for-the-badge&logo=tailwind-css" />
+</div>
+
+---
+
+### ✨ Advanced Features Spotlight
+
+* **🎭 Physics-Based Motion:** Highly intentional transitions and scroll-triggered animations powered by Framer Motion.
+* **🌑 Dynamic Midnight Mode:** A sophisticated dark-themed UI designed for visual comfort and elegance.
+* **🚀 Optimized Architecture:** Utilizing Next.js 14 App Router for lightning-fast performance and SEO.
+* **📱 Ultra-Responsive:** Pixel-perfect fluid layouts that adapt seamlessly from desktop to mobile.
+* **🎨 Artistic vs. Logic:** A perfect blend of "Midnight Bloom" aesthetics with industrial-grade code quality.
+
+---
+
 ### 🌙 The Design Philosophy
 The aesthetic is **"Midnight Bloom"** — a professional, sophisticated contrast to the warm, earth-toned "Technical Garden." It represents the intersection of logic and creative flourishing.
 
-* **🎨 Palette:** Sap greens, soft midnight purples, yellow, orange accent.
-* **✨ Motion:** Physics-based layout transitions and scroll-triggered animations.
+* **🎨 Palette:** Sap greens, soft midnight purples, with yellow and orange accents.
+* **✨ Motion:** Intentional layout transitions and smooth exit/entry animations.
 * **📐 Layout:** Scalable, component-driven architecture using React Server Components.
 
 ---
 
-### 🛠️ Architecture & Tools
+### 🚀 Explore The Ecosystem
 
-<div align="center">
-  <table style="border: none;">
-    <tr>
-      <td align="center"><b>Core Engine</b></td>
-      <td align="center"><b>Visual Layer</b></td>
-      <td align="center"><b>Environment</b></td>
-    </tr>
-    <tr>
-      <td><img src="https://skillicons.dev/icons?i=nextjs,react,ts&perline=3" /></td>
-      <td><img src="https://skillicons.dev/icons?i=tailwind,framer,figma&perline=3" /></td>
-      <td><img src="https://skillicons.dev/icons?i=git,github,vscode&perline=3" /></td>
-    </tr>
-  </table>
-</div>
+* **🥐 Cinnabloom Bakery** | [Premium Delivery Template](https://github.com/Mst-Gulnahar/cinnabloom-bakery)
+* **🍯 Honey Haze** | [Cafe & Boutique Experience](https://honey-haze.vercel.app/)
+* **💎 Pixel Studio** | [Official Studio Site](https://pixel-studio-opal.vercel.app/)
 
 ---
 
-### 💠 Performance Metrics
-* **⚡ Full SSR Integration:** Optimized for maximum SEO visibility and performance.
-* **📱 Ultra-Responsive:** Pixel-perfect fluid layouts across all device resolutions.
-* **🎭 Motion Logic:** Complex UI states handled with clean Framer Motion variants.
-* **🌑 Asset Optimization:** Advanced image optimization using Next.js Image component.
+### 🎨 Creative Credits
+* **Lead Developer & Designer:** Mst. Gulnahar
+* **Studio:** Pixel Studio
+* **Philosophy:** High-end functional art for the modern web.
 
 ---
 
-### 📩 Studio Collaboration
-Developed under the **Pixel Studio** banner—specializing in high-end digital identities.
-
-<div align="center">
-  <a href="mailto:pixelstudioo003@gmail.com">
-    <img src="https://img.shields.io/badge/Gmail-B5835A?style=for-the-badge&logo=gmail&logoColor=white" />
-  </a>
-  <a href="https://pixel-studio-opal.vercel.app/">
-    <img src="https://img.shields.io/badge/Pixel_Studio-2D5A27?style=for-the-badge&logo=vercel&logoColor=white" />
-  </a>
-</div>
+### 📩 Contact & Inquiries
+Looking for a unique, high-end digital identity?
+* **Email:** `pixelstudioo003@gmail.com`
+* **Portfolio:** [m1dnightbl00m.vercel.app](https://m1dnightbl00m.vercel.app/)
+* **Studio:** [Pixel Studio](https://pixel-studio-opal.vercel.app/)
 
 <br />
 
 <p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=E8A0BF,B5835A&height=100&section=footer" width="100%" />
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=2D5A27,B5835A&height=100&section=footer" width="100%" />
 </p>
