@@ -20,15 +20,16 @@
   <p><i>Visual highlights of the m1dnightbl00m experience</i></p>
   <table style="border: none; border-collapse: collapse;">
     <tr>
-      <td colspan="2"><img src="shot1.png" alt="Hero Section" width="100%" style="border-radius: 10px; margin-bottom: 5px;" /></td>
+      <td colspan="2"><img src="/m1dnightbl00m/public/shot1.png" alt="Hero Section" width="100%" style="border-radius: 10px; margin-bottom: 5px;" /></td>
     </tr>
     <tr>
-      <td><img src="shot2.png" alt="Project Grid" width="100%" style="border-radius: 10px;" /></td>
+      <td><img src="/m1dnightbl00m/public/shot2.png" alt="Project Grid" width="100%" style="border-radius: 10px;" /></td>
       <td><img src="shot3.png" alt="Interactive UI" width="100%" style="border-radius: 10px;" /></td>
     </tr>
     <tr>
-      <td><img src="shot4.png" alt="Mobile View" width="100%" style="border-radius: 10px;" /></td>
-      <td><img src="shot5.png" alt="Creative Details" width="100%" style="border-radius: 10px;" /></td>
+      <td><img src="/m1dnightbl00m/public/shot3.png" alt="Mobile View" width="100%" style="border-radius: 10px;" /></td>
+      <td><img src="/m1dnightbl00m/public/shot4.png" alt="Creative Details" width="100%" style="border-radius: 10px;" /></td>
+      <td><img src="/m1dnightbl00m/public/shot5.png" alt="Creative Details" width="100%" style="border-radius: 10px;" /></td>
     </tr>
   </table>
 </div>
@@ -50,7 +51,7 @@ Built for speed, reliability, and smooth interaction.
 ### ✨ Advanced Features Spotlight
 
 * **🎭 Physics-Based Motion:** Highly intentional transitions and scroll-triggered animations powered by Framer Motion.
-* **🌑 Dynamic Midnight Mode:** A sophisticated dark-themed UI designed for visual comfort and elegance.
+* **🌑 Dynamic Midnight Mode:** A sophisticated forest-themed UI designed for visual comfort and elegance.
 * **🚀 Optimized Architecture:** Utilizing Next.js 14 App Router for lightning-fast performance and SEO.
 * **📱 Ultra-Responsive:** Pixel-perfect fluid layouts that adapt seamlessly from desktop to mobile.
 * **🎨 Artistic vs. Logic:** A perfect blend of "Midnight Bloom" aesthetics with industrial-grade code quality.
