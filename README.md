@@ -69,7 +69,6 @@ The aesthetic is **"Midnight Bloom"** — a professional, sophisticated contrast
 
 ### 🚀 Explore The Ecosystem
 
-* **🥐 Cinnabloom Bakery** | [Premium Delivery Template](https://github.com/Mst-Gulnahar/cinnabloom-bakery)
 * **🍯 Honey Haze** | [Cafe & Boutique Experience](https://honey-haze.vercel.app/)
 * **💎 Pixel Studio** | [Official Studio Site](https://pixel-studio-opal.vercel.app/)
 
