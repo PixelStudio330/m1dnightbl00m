@@ -1,9 +1,9 @@
 "use client";
 
 import { ReactLenis } from "@studio-freight/react-lenis";
-import { ReactNode } from "react";
 
-export default function SmoothScroll({ children }: { children: ReactNode }) {
+// Changing ReactNode to any stops the "bigint" type error on Vercel
+export default function SmoothScroll({ children }: { children: any }) {
   return (
     <ReactLenis root options={{ lerp: 0.1, duration: 1.5, smoothWheel: true }}>
       {children}
