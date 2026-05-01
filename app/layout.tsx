@@ -3,6 +3,7 @@ import { Inter, Playfair_Display } from "next/font/google";
 import "./globals.css";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
+import SmoothScroll from "./components/SmoothScroll"; // Import the new component
 
 const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
 const playfair = Playfair_Display({ subsets: ["latin"], variable: "--font-playfair" });
@@ -20,16 +21,18 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${inter.variable} ${playfair.variable} antialiased`}>
-        <div className="flex flex-col min-h-screen">
-          <Header />
-          
-          {/* Main content grows to push footer down */}
-          <main className="flex-grow">
-            {children}
-          </main>
+        <SmoothScroll>
+          <div className="flex flex-col min-h-screen">
+            <Header />
+            
+            {/* Main content grows to push footer down */}
+            <main className="flex-grow">
+              {children}
+            </main>
 
-          <Footer />
-        </div>
+            <Footer />
+          </div>
+        </SmoothScroll>
       </body>
     </html>
   );
