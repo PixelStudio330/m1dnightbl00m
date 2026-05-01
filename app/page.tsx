@@ -4,7 +4,10 @@ import React, { useEffect, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { motion, useMotionValue, useSpring } from "framer-motion";
-import { Flower2, Star, Zap, Sparkles, MousePointer2, Code2, Palette, Globe } from "lucide-react";
+import { 
+  Flower2, Star, Zap, Sparkles, MousePointer2, 
+  Code2, Palette, Globe, Database, Layers 
+} from "lucide-react";
 
 export default function HomePage() {
   const [mounted, setMounted] = useState(false);
@@ -21,7 +24,7 @@ export default function HomePage() {
     const rect = e.currentTarget.getBoundingClientRect();
     const centerX = rect.left + rect.width / 2;
     const centerY = rect.top + rect.height / 2;
-    mouseX.set((e.clientX - centerX) * 0.3); // Increased pull for a "stickier" feel
+    mouseX.set((e.clientX - centerX) * 0.3);
     mouseY.set((e.clientY - centerY) * 0.3);
   };
 
@@ -30,16 +33,39 @@ export default function HomePage() {
     mouseY.set(0);
   };
 
-  const skills = [
-    { name: "Next.js", level: "Master", color: "#8A6DAF" },
-    { name: "TypeScript", level: "Master", color: "#8A6DAF" },
-    { name: "Tailwind CSS", level: "Master", color: "#8A6DAF" },
-    { name: "Framer Motion", level: "Master", color: "#8A6DAF" },
-    { name: "Figma", level: "Master", color: "#8A6DAF" },
-    { name: "Vercel", level: "Master", color: "#8A6DAF" },
-    { name: "GitHub", level: "Pro", color: "#E67E22" },
-    { name: "Lucide React", level: "Pro", color: "#E67E22" },
-    { name: "React", level: "Pro", color: "#E67E22" },
+  // Categorized Skills Data
+  const skillCategories = [
+    {
+      title: "Frontend Flora",
+      icon: <Palette size={20} className="text-[#5FA14C]" />,
+      items: [
+        { name: "Next.js", level: "Master", color: "#8A6DAF" },
+        { name: "React", level: "Pro", color: "#E67E22" },
+        { name: "Tailwind CSS", level: "Master", color: "#8A6DAF" },
+        { name: "Framer Motion", level: "Master", color: "#8A6DAF" },
+        { name: "SEO Friendly Dev", level: "Master", color: "#8A6DAF" },
+      ],
+    },
+    {
+      title: "Backend Roots",
+      icon: <Database size={20} className="text-[#E67E22]" />,
+      items: [
+        { name: "MySQL", level: "Pro", color: "#E67E22" },
+        { name: "BetterAuth", level: "Master", color: "#8A6DAF" },
+        { name: "Nodemon", level: "Expert", color: "#8A6DAF" },
+        { name: "HeidiSQL / Sequel Ace", level: "Pro", color: "#E67E22" },
+      ],
+    },
+    {
+      title: "Full Stack Garden",
+      icon: <Layers size={20} className="text-[#8A6DAF]" />,
+      items: [
+        { name: "TypeScript", level: "Master", color: "#8A6DAF" },
+        { name: "Vercel", level: "Master", color: "#8A6DAF" },
+        { name: "GitHub", level: "Pro", color: "#E67E22" },
+        { name: "Lucide React", level: "Pro", color: "#E67E22" },
+      ],
+    },
   ];
 
   if (!mounted) return null;
@@ -103,13 +129,6 @@ export default function HomePage() {
               Salam! <br />
               <span className="relative inline-block text-transparent bg-clip-text bg-gradient-to-r from-[#8A6DAF] via-[#C7A9D9] to-[#8A6DAF] bg-[length:200%_auto] animate-gradient-slow pb-2">
                 I&apos;m Nahar.
-                <motion.span 
-                  animate={{ y: [0, -15, 0], rotate: [0, 15, 0] }}
-                  transition={{ repeat: Infinity, duration: 3, ease: "easeInOut" }}
-                  className="absolute -right-16 top-0 text-[#E67E22] hidden md:block"
-                >
-                  
-                </motion.span>
               </span>
             </motion.h1>
             
@@ -138,7 +157,6 @@ export default function HomePage() {
                     View My Masterpieces 
                     <Flower2 size={24} className="group-hover:rotate-180 transition-transform duration-700" />
                   </span>
-                  {/* Liquid fill effect */}
                   <motion.div className="absolute inset-0 bg-[#5FA14C] translate-y-[100%] group-hover:translate-y-0 transition-transform duration-500 ease-[cubic-bezier(0.19,1,0.22,1)]" />
                 </motion.button>
               </Link>
@@ -154,7 +172,6 @@ export default function HomePage() {
             transition={{ type: "spring", damping: 15, stiffness: 100, delay: 0.4 }}
             className="relative w-full aspect-square max-w-[550px]"
           >
-            {/* Blobbing Background */}
             <motion.div 
               animate={{ 
                 borderRadius: ["40% 60% 70% 30% / 40% 50% 60% 70%", "60% 40% 30% 70% / 60% 30% 70% 40%", "40% 60% 70% 30% / 40% 50% 60% 70%"] 
@@ -163,7 +180,6 @@ export default function HomePage() {
               className="absolute inset-0 bg-gradient-to-tr from-[#8A6DAF]/30 to-[#5FA14C]/20 blur-3xl scale-110"
             />
 
-            {/* Custom Masked Image Container */}
             <div 
               className="w-full h-full bg-[#8A6DAF] shadow-[0_40px_100px_-20px_rgba(138,109,175,0.4)] relative z-10 overflow-hidden border-[12px] border-white/50 group"
               style={{ clipPath: "polygon(50% 0%, 83% 12%, 100% 43%, 94% 78%, 68% 100%, 32% 100%, 6% 78%, 0% 43%, 17% 12%)" }}
@@ -178,7 +194,6 @@ export default function HomePage() {
               <div className="absolute inset-0 bg-gradient-to-t from-[#8A6DAF]/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
             </div>
 
-            {/* Floating Assets */}
             <motion.div 
               animate={{ y: [0, -25, 0], rotate: [15, -10, 15] }} 
               transition={{ duration: 6, repeat: Infinity, ease: "easeInOut" }} 
@@ -237,7 +252,7 @@ export default function HomePage() {
             </div>
           </motion.div>
 
-          {/* Skills Grid */}
+          {/* Categorized Skills Grid */}
           <motion.div 
             initial={{ opacity: 0, scale: 0.95 }}
             whileInView={{ opacity: 1, scale: 1 }}
@@ -252,37 +267,48 @@ export default function HomePage() {
               <Globe className="text-[#C7A9D9] animate-spin-slow" size={32} />
             </div>
 
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
-              {skills.map((skill, index) => (
-                <motion.div
-                  key={skill.name}
-                  initial={{ opacity: 0, y: 15 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  transition={{ delay: index * 0.08, ease: "easeOut" }}
-                  whileHover={{ 
-                    scale: 1.05, 
-                    backgroundColor: "rgba(255,255,255,0.9)",
-                    boxShadow: "0 20px 40px -10px rgba(0,0,0,0.05)"
-                  }}
-                  className="flex items-center justify-between p-5 rounded-2xl border-2 border-[#C7A9D9]/10 bg-white/50 group transition-all"
-                >
-                  <span className="font-black text-[#5FA14C] group-hover:text-[#8A6DAF] transition-colors text-lg">
-                    {skill.name}
-                  </span>
-                  <span 
-                    className="text-[10px] font-black tracking-widest px-4 py-1.5 rounded-full uppercase shadow-sm"
-                    style={{ backgroundColor: `${skill.color}15`, color: skill.color }}
-                  >
-                    {skill.level}
-                  </span>
-                </motion.div>
+            <div className="space-y-12">
+              {skillCategories.map((category, catIndex) => (
+                <div key={category.title} className="space-y-6">
+                  <div className="flex items-center gap-3 text-[#8A6DAF]">
+                    {category.icon}
+                    <h4 className="text-sm font-black uppercase tracking-[0.2em]">{category.title}</h4>
+                  </div>
+                  
+                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
+                    {category.items.map((skill, index) => (
+                      <motion.div
+                        key={skill.name}
+                        initial={{ opacity: 0, y: 15 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        transition={{ delay: (catIndex * 0.1) + (index * 0.08), ease: "easeOut" }}
+                        whileHover={{ 
+                          scale: 1.05, 
+                          backgroundColor: "rgba(255,255,255,0.9)",
+                          boxShadow: "0 20px 40px -10px rgba(0,0,0,0.05)"
+                        }}
+                        className="flex items-center justify-between p-5 rounded-2xl border-2 border-[#C7A9D9]/10 bg-white/50 group transition-all"
+                      >
+                        <span className="font-black text-[#5FA14C] group-hover:text-[#8A6DAF] transition-colors text-lg">
+                          {skill.name}
+                        </span>
+                        <span 
+                          className="text-[10px] font-black tracking-widest px-4 py-1.5 rounded-full uppercase shadow-sm"
+                          style={{ backgroundColor: `${skill.color}15`, color: skill.color }}
+                        >
+                          {skill.level}
+                        </span>
+                      </motion.div>
+                    ))}
+                  </div>
+                </div>
               ))}
             </div>
           </motion.div>
         </div>
       </section>
 
-      {/* Floating Status / Mode Toggle */}
+      {/* Floating Status */}
       <motion.div 
         drag 
         dragConstraints={{ left: 0, right: 0, top: 0, bottom: 0 }} 
